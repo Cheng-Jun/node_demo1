@@ -1,0 +1,25 @@
+extends ../layout
+block content
+   #admin_list
+      table
+         thead
+            tr
+               th 电影名字
+               th 导演
+               th 国家
+               th 上映年份
+               //- th 录入时间
+               th 查看
+               th 更新
+               th 删除
+         tbody
+            each  data in movies
+               tr
+                  td=data.title
+                  td=data.doctor
+                  td=data.country
+                  td=data.year
+                  //- td #{moment(data.meta.createdAt).format('MM/DD/YYYY')}
+                  td: a(target="_blank", href='/admin/updata/#{data._id}') 查看
+                  td: a(target="_blank", href='/admin/updata/#{data._id}') 修改
+                  td: button(type="button",data-id="#{data._id}") 删除

@@ -1,0 +1,64 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+#index{
+  width: 1200px;
+  margin:20px auto 0px;
+}
+.list{
+  overflow: hidden;
+}
+.list li{
+  float: left;
+  width: 278px;
+  border: 1px solid #555500;
+  margin: 10px;
+}
+.list li i img{
+  display: block;
+  width: 278px;
+  height: 180px;
+  margin-bottom:10px;
+}
+.list li p{
+  overflow: hidden;
+  height: 30px;
+}
+.list li p h3{
+  float: left;
+  width: 40%;
+  text-align: center;
+}
+.list li p a{
+  display: block;
+  width: 100px;
+  height: 30px;
+  background-color: #880000;
+  color:#fff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+
+#detaile{
+  width: 1200px;
+  margin:20px auto 0px;
+  overflow: hidden;
+}
+.detaile_left{
+  float: left;
+  width: 600px;
+  height: 700px;
+  border:1px solid #cccccc;
+}
+.detaile_right{
+  float: right;
+  width: 550px;
+  line-height: 25px;
+}

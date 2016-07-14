@@ -1,0 +1,11 @@
+extends ../layout
+block content
+  #index
+    ul.list
+      each data in movies
+        li
+          i
+            img(src='#{data.poster}',alt="#{data.title}")
+          p
+            h3 #{data.title}
+            a(href="/movie/#{data._id}") 观看预告片

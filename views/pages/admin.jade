@@ -1,0 +1,20 @@
+extends  ../layout
+block content
+   #upload
+      form(active="/movies/new",method='get')
+         label 电影名字
+            input(value='#{data.title}',name="movie[title]",type='text')
+         label 电影导演
+            input(value='#{data.doctor}',name="movie[doctor]",type='text')
+         label 国家
+            input(value='#{data.country}',name="movie[country]",type='text')
+         label 语种
+            input(value='#{data.language}',name="movie[language]",type='text')
+         label 海报地址
+            input(value='#{data.poster}',name="movie[poster]",type='text')
+         label 年份
+            input(value='#{data.year}',name="movie[year]",type='text')
+         label 简介
+            input(value='#{data.summary}',name="movie[summary]",type='text')
+         label 点击提交
+            input(value='提交',type='submit')
